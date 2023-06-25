@@ -1,5 +1,7 @@
 import { Grid } from '@mui/material';
 import React, { FC, ReactElement } from 'react';
+import Profile from '../profile';
+import CreateATask from '../createATask';
 
 const Sidebar: FC = (): ReactElement => {
     return (
@@ -20,12 +22,11 @@ const Sidebar: FC = (): ReactElement => {
                     alignItems: 'center',
                 }}
             >
-                Sidebar
+                <Profile name="John Doe" />
+                <CreateATask />
             </Grid>
         </>
     );
 };
 
 export default Sidebar;
-
-const d = {};
